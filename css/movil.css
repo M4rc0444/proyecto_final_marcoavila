@@ -1,0 +1,242 @@
+@media screen and (max-width: 480px) {
+.contenedor_header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header
+
+{
+  flex-direction: column;
+}
+ .icono_menu
+ {
+  display: block;
+
+ }
+ .menu{
+  display: none;
+  border-radius: 10px;
+ }
+ .menu ul
+ {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color_verde_claro);
+  border-radius: 10px;
+    
+  
+ }
+ .menu ul li a
+ {
+  border-bottom: 1px rgb(121, 201, 31) dotted;
+  color: white;
+ }
+/* el responsive slide pero en movil */
+
+.filtro_slide 
+{
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+.rslides
+{
+  height: 600px;
+}
+.rslides img
+{
+  height: 600px;
+
+}
+/* parte del about y esas ondas pero en movil */
+.contenido_about {
+    flex-direction: column-reverse; 
+    gap: 30px;
+    
+  }
+
+  .imagen_about img {
+    width: 100%;
+    height: 300px;
+
+
+  }
+
+
+  .fondo_hojas {
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .texto_about {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .texto_about h3 {
+    font-size: 20px;
+  }
+
+  .btn_about {
+    margin: 0 auto;
+  }
+  .contenedor_servicios {
+    grid-template-columns: 1fr;
+     justify-items: center;
+  }
+  .grid_galeria {
+    grid-template-columns: 1fr; 
+    
+  }
+
+  .foto_proyecto img {
+    height: auto; 
+    
+  }
+/* parte de el equipo pero movil */
+.card_equipo
+{
+  width: 100%;
+}
+/* parte de la vida es un carrusel pero en movil xd */
+.slide {
+    min-width: 100% !important;
+    padding: 20px;
+    
+  }
+
+ 
+  .tarjeta_testimonio {
+    border-radius: 15px;
+    background-color: #1c5d46;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .info_persona {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .info_persona img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+  }
+
+  .icono_comilla {
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+  }
+
+  .slide-indicators {
+    padding-top: 10px;
+  }
+
+  .slide-indicator:after {
+    width: 20px;
+    height: 6px;
+  }
+  /* parte del parraalzz pero movil */
+   .contenido_parallax {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque {
+    text-align: center;
+    flex: none;
+  }
+
+  .bloque h2 {
+    font-size: 40px;
+  }
+
+  .bloque p {
+    font-size: 26px;
+  }
+  /* parte movil de las preguntas y respuestas */
+  .contenedor_faqs {
+    flex-direction: column;
+  }
+
+  .faq_izquierda,
+  .faq_derecha {
+    width: 100%;
+  }
+
+  .faq_derecha img {
+    margin-top: 20px;
+  }
+  .blogs_flex
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* parte de el blog */
+   .blog_card {
+    width: 100%;
+  }
+  /* parte del formulario */
+ .formulario_sobre_mapa {
+    flex-direction: column;
+   padding: 15px;
+    width: 105%;
+  }
+
+  .info_contacto,
+  .formulario_contacto {
+    width: 100%;
+    padding: 20px;
+  }
+  .seccion_contacto {
+    padding-bottom: 700px; 
+  }
+
+  .contenedor_contacto iframe {
+    height: 250px; 
+  }
+
+  /* parte del foter movil */
+  .footer_parallax
+  {
+    margin-top: 90px;
+  }
+ 
+   .footer_contenido
+   {
+    flex-direction: column;
+    gap: 20px;
+   }
+   .redes_sociales
+
+   {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+   }
+   /* modal pero movil */
+   .contenidomodal {
+    width: 90%;
+    padding: 10px;
+  }
+   
+  
+}

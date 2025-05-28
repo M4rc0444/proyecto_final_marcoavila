@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/movil.css">
+  <!-- esto es para el diseño del carrusel -->
+  <link rel="stylesheet" href="css/carrousel.css">
+  <!-- parte de los iconos para que se vean -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+   <!-- parte del menu desplegable -->
+   <script src="js/jquery-3.7.1.js"></script>
+   <!-- parte del responsive slide -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.js"></script>
+  <!-- parte del fancybox -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- parte del wow -->
+ <script src="js/wow.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <title>Proyecto Final Unidad 4</title>
+</head>
+<body>
+ <script type="text/javascript">
+  function validarFormulario() {
+    if (document.getElementById("nombrecontacto").value.trim() === "") {
+      alert("Tienes que escribir tu nombre");
+      document.getElementById("nombrecontacto").focus();
+      return false;
+    }
+
+    if (document.getElementById("emailcontacto").value.trim() === "") {
+      alert("Tienes que escribir tu correo");
+      document.getElementById("emailcontacto").focus();
+      return false;
+    }
+
+    if (document.getElementById("asunto").value.trim() === "") {
+      alert("Tienes que escribir el asunto");
+      document.getElementById("asunto").focus();
+      return false;
+    }
+
+    alert("Enviado Corretamente");
+    return false; 
+  }
+</script>
+
+
+
+   <a href="#inicio" class="subir"><i class="fa-solid fa-chevron-up"></i></a>
+ <header class="ancho margen" id="inicio">
+    <div class="contenedor_header">
+    <figure class="logo">
+      <img src="img/logo.png" alt="">
+       <div class="texto_logo">
+      <h1>Greencrest</h1>
+      <span>GARDENING SERVICE</span>
+    </div>
+    </figure>
+
+    <a href="#" class="icono_menu" id="icono_movil">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  </div>
+   
+    <nav class="menu" id="contendor_menu">
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+<section class="contenedor_slide ancho wow animate__animated animate__fadeInDown">
+
+  <ul class="rslides" id="slider">
+    <li><img src="img/jardineria1.jpg" alt="">
+      <div class="filtro_slide">
+    <h3 class="etiqueta">Garden & Lawn Care</h3>
+    <h2 class="titulo_slide">Landscape Luxury<br>Made Affodable</h2>
+    <p class="subtitulo_slide">
+      We Provide Cutting Edge Lawn Care Service. We<br>
+      Make Your Lawn Look Its Best.
+    </p>
+    <div class="contenedor_btn_slide">
+      <a href="#" class="btn_slide">Contact Us</a>
+    </div>
+  </div>
+    
+    
+    </li>
+    <li><img src="img/jardineria2.jpg" alt="">
+      <div class="filtro_slide">
+    <h3 class="etiqueta">Garden & Lawn Care</h3>
+    <h2 class="titulo_slide">Your Landscape<br>Specialist</h2>
+    <p class="subtitulo_slide">
+      We Provide Cutting Edge Lawn Care Service. We<br>
+      Make Your Lawn Look Its Best.
+    </p>
+    <div class="contenedor_btn_slide">
+      <a href="#" class="btn_slide">Contact Us</a>
+    </div>
+  </div>
+    </li>
+    <li><img src="img/jardineria3.jpg" alt="">
+     <div class="filtro_slide">
+    <h3 class="etiqueta">Garden & Lawn Care</h3>
+    <h2 class="titulo_slide">Lawn Care You<br>Can Trust</h2>
+    <p class="subtitulo_slide">
+      We Provide Cutting Edge Lawn Care Service. We<br>
+      Make Your Lawn Look Its Best.
+    </p>
+    <div class="contenedor_btn_slide">
+      <a href="#" class="btn_slide">Contact Us</a>
+    </div>
+  </div></li>
+  </ul>
+</section>
+<!--parte del about de la podadora y eso -->
+
+<section class="seccion_about ancho">
+  <h2 class="titulo_seccion wow animate__animated animate__backInUp">
+    About Us
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+    
+  </h2>
+
+  <div class="contenido_about">
+   <div class="imagen_about wow animate__animated animate__fadeInLeft">
+  <div class="fondo_hojas"></div>
+  <img src="img/podadora.jpg" alt="Lawn mower">
+</div>
+
+
+    <div class="texto_about wow animate__animated animate__fadeInRight">
+      <h3>Making Beautifully Manicured Lawns A Reality</h3>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Illum Iusto Minima Quo,
+        Recusandae Perspiciatis Aspernatur, Rerum Tempora Vitae Aperiam Enim, Dicta Maxime?
+        Eum Repellat Velit Perspiciatis Eligendi Rerum Voluptate Repellendus.
+      </p>
+      <a href="#" class="btn_about" class="btn_modal" id="boton_modal" >Contact Us</a>
+    </div>
+   
+  </div>
+</section>
+<!-- parte de los servicios y esa onda -->
+ <section class="seccion_servicios ancho">
+  <h2 class="titulo_seccion wow animate__animated animate__bounceInDown">
+      Our Services
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  
+  </h2>
+
+  <div class="contenedor_servicios wow animate__animated animate__fadeInUp">
+    <article class="card_servicio">
+      <img src="img/servicio1.jpg" alt="Garden Care">
+      <div class="overlay">
+        <h3>Garden Care</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+
+    <article class="card_servicio">
+      <img src="img/servicio2.jpg" alt="Lawn Mowing">
+      <div class="overlay">
+        <h3>Lawn Mowing</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+
+    <article class="card_servicio">
+      <img src="img/servicio3.jpg" alt="Landscape Design">
+      <div class="overlay">
+        <h3>Landscape Design</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+    <article class="card_servicio">
+      <img src="img/servicio1.jpg" alt="Garden Care">
+      <div class="overlay">
+        <h3>Cleanups Services</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+    <article class="card_servicio">
+      <img src="img/servicio1.jpg" alt="Garden Care">
+      <div class="overlay">
+        <h3>Tree Planting</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+    <article class="card_servicio">
+      <img src="img/servicio1.jpg" alt="Garden Care">
+      <div class="overlay">
+        <h3>Weeding & Prunning</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Consequatur Possimus Assumenda Dolores Odit.</p>
+        <a href="#" class="btn_servicio">Read More</a>
+      </div>
+    </article>
+  </div>
+</section><br><br><br>
+  <h2 class="titulo_seccion wow animate__animated animate__fadeInLeft">
+    See Us In Action
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  </h2>
+<article class="encapusula_video ancho wow animate__animated animate__backInDown">
+<div id="contenedor_video">
+<iframe src="https://www.youtube.com/embed/0KFZt7X_z94?si=lVHFLPphncTW1UNF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</article>
+<!-- parte del fancubox y los tabs -->
+<br><br>
+<section class="seccion_proyectos ancho">
+  <h2 class="titulo_seccion  wow animate__animated animate__fadeInLeft ">
+     Our Projects
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+   
+  </h2>
+
+  <ul class="menu_tabs">
+    <li><a href="#todos" class="link activo">All</a></li>
+    <li><a href="#garden" class="link">Garden Care</a></li>
+    <li><a href="#landscape" class="link">Landscape Design</a></li>
+    <li><a href="#tree" class="link">Tree Planting</a></li>
+    <li><a href="#cleanup" class="link">Cleanups</a></li>
+  </ul>
+
+  <div id="contenedor_tabs">
+    <article id="todos" class="grid_galeria">
+      <div class="foto_proyecto">
+        <a href="img/fancybox1.jpg" data-fancybox="gallery">
+          <img src="img/fancybox1.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Watering Garden</h3>
+            <p>Garden Care</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="foto_proyecto">
+        <a href="img/fancybox4.jpg" data-fancybox="gallery">
+          <img src="img/fancybox4.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="foto_proyecto">
+        <a href="img/fancybox5.jpg" data-fancybox="gallery">
+          <img src="img/fancybox5.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+      <div class="foto_proyecto">
+        <a href="img/fancybox4.jpg" data-fancybox="gallery">
+          <img src="img/fancybox4.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+      <div class="foto_proyecto">
+        <a href="img/fancybox5.jpg" data-fancybox="gallery">
+          <img src="img/fancybox5.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+      <div class="foto_proyecto">
+        <a href="img/fancybox6.jpg" data-fancybox="gallery">
+          <img src="img/fancybox6.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+         <div class="foto_proyecto">
+        <a href="img/fancybox6.jpg" data-fancybox="gallery">
+          <img src="img/fancybox6.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+         <div class="foto_proyecto">
+        <a href="img/fancybox8.jpg" data-fancybox="gallery">
+          <img src="img/fancybox8.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+         <div class="foto_proyecto">
+        <a href="img/fancybox9.jpg" data-fancybox="gallery">
+          <img src="img/fancybox9.jpg" alt="">
+          <div class="info_proyecto">
+            <span class="icono">+</span>
+            <h3>Tree Zone</h3>
+            <p>Tree Planting</p>
+          </div>
+        </a>
+      </div>
+
+     
+    </article>
+
+   <article id="garden" class="grid_galeria">
+  <div class="foto_proyecto">
+    <a href="img/fancybox9.jpg" data-fancybox="gallery">
+      <img src="img/fancybox9.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Garden Bloom</h3>
+        <p>Garden Care</p>
+      </div>
+    </a>
+  </div>
+  <div class="foto_proyecto">
+    <a href="img/fancybox8.jpg" data-fancybox="gallery">
+      <img src="img/fancybox8.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Garden Bloom</h3>
+        <p>Garden Care</p>
+      </div>
+    </a>
+  </div>
+  <div class="foto_proyecto">
+    <a href="img/fancybox4.jpg" data-fancybox="gallery">
+      <img src="img/fancybox4.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Garden Bloom</h3>
+        <p>Garden Care</p>
+      </div>
+    </a>
+  </div>
+</article>
+
+<article id="landscape" class="grid_galeria">
+  <div class="foto_proyecto">
+    <a href="img/fancybox1.jpg" data-fancybox="gallery">
+      <img src="img/fancybox1.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Modern Park</h3>
+        <p>Landscape Design</p>
+      </div>
+    </a>
+  </div>
+   <div class="foto_proyecto">
+    <a href="img/fancybox8.jpg" data-fancybox="gallery">
+      <img src="img/fancybox8.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Modern Park</h3>
+        <p>Landscape Design</p>
+      </div>
+    </a>
+  </div>
+   <div class="foto_proyecto">
+    <a href="img/fancybox5.jpg" data-fancybox="gallery">
+      <img src="img/fancybox5.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Modern Park</h3>
+        <p>Landscape Design</p>
+      </div>
+    </a>
+  </div>
+   <div class="foto_proyecto">
+    <a href="img/fancybox6.jpg" data-fancybox="gallery">
+      <img src="img/fancybox6.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Modern Park</h3>
+        <p>Landscape Design</p>
+      </div>
+    </a>
+  </div>
+</article>
+
+<article id="tree" class="grid_galeria">
+  <div class="foto_proyecto">
+    <a href="img/fancybox1.jpg" data-fancybox="gallery">
+      <img src="img/fancybox1.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Tree Zone</h3>
+        <p>Tree Planting</p>
+      </div>
+    </a>
+  </div>
+  <div class="foto_proyecto">
+    <a href="img/fancybox8.jpg" data-fancybox="gallery">
+      <img src="img/fancybox8.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Tree Zone</h3>
+        <p>Tree Planting</p>
+      </div>
+    </a>
+  </div>
+   <div class="foto_proyecto">
+    <a href="img/fancybox8.jpg" data-fancybox="gallery">
+      <img src="img/fancybox8.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Tree Zone</h3>
+        <p>Tree Planting</p>
+      </div>
+    </a>
+  </div>
+</article>
+
+<article id="cleanup" class="grid_galeria">
+  <div class="foto_proyecto">
+    <a href="img/fancybox1.jpg" data-fancybox="gallery">
+      <img src="img/fancybox1.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Clean & Green</h3>
+        <p>Cleanups</p>
+      </div>
+    </a>
+  </div>
+  <div class="foto_proyecto">
+    <a href="img/fancybox9.jpg" data-fancybox="gallery">
+      <img src="img/fancybox9.jpg" alt="">
+      <div class="info_proyecto">
+        <span class="icono">+</span>
+        <h3>Clean & Green</h3>
+        <p>Cleanups</p>
+      </div>
+    </a>
+  </div>
+</article>
+
+  </div>
+</section>
+
+<!-- parte de lso precios -->
+
+<section class="planes_precio ancho">
+  <h2 class="titulo_seccion wow animate__animated animate__fadeInLeft">
+     Pricing Plans
+     <br><br>
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  </h2>
+
+  <div class="contenedor_planes">
+   
+    <article class="plan wow animate__animated animate__bounceInDown">
+      <h3>Basic Plan</h3>
+      <p class="precio">$50</p>
+      <p class="por_mes">Per Month</p>
+      <ul class="lista_servicios">
+        <li><i class="fa fa-check"></i> Garden Care</li>
+        <li><i class="fa fa-check"></i> Lawn Mowing</li>
+        <li><i class="fa fa-times"></i> Landscape Design</li>
+        <li><i class="fa fa-times"></i> Cleanups Services</li>
+        <li><i class="fa fa-times"></i> Tree Planting</li>
+        <li><i class="fa fa-times"></i> Weeding & Prunning</li>
+      </ul>
+      <a href="#" class="btn_comprar">Buy Now</a>
+    </article>
+
+    
+   <article class="plan plan_destacado wow animate__animated animate__bounceInDown">
+  <div class="encabezado_plan">
+    <h3>Standard Plan</h3>
+    <p class="precio">$90</p>
+    <p class="por_mes">Per Month</p>
+  </div>
+  <div class="cuerpo_plan">
+    <ul class="lista_servicios">
+      <li><i class="fa fa-check"></i> Garden Care</li>
+      <li><i class="fa fa-check"></i> Lawn Mowing</li>
+      <li><i class="fa fa-check"></i> Landscape Design</li>
+      <li><i class="fa fa-check"></i> Cleanups Services</li>
+      <li><i class="fa fa-times"></i> Tree Planting</li>
+      <li><i class="fa fa-times"></i> Weeding & Prunning</li>
+    </ul>
+    <a href="#" class="btn_comprar oscuro">Buy Now</a>
+  </div>
+</article>
+
+
+    <article class="plan wow animate__animated animate__bounceInDown">
+      <h3>Ultimate Plan</h3>
+      <p class="precio">$130</p>
+      <p class="por_mes">Per Month</p>
+      <ul class="lista_servicios">
+        <li><i class="fa fa-check"></i> Garden Care</li>
+        <li><i class="fa fa-check"></i> Lawn Mowing</li>
+        <li><i class="fa fa-check"></i> Landscape Design</li>
+        <li><i class="fa fa-check"></i> Cleanups Services</li>
+        <li><i class="fa fa-check"></i> Tree Planting</li>
+        <li><i class="fa fa-check"></i> Weeding & Prunning</li>
+      </ul>
+      <a href="#" class="btn_comprar">Buy Now</a>
+    </article>
+  </div>
+</section>
+<!-- parte de los teasms y los weyes esos -->
+<section class="nuestro_equipo ancho">
+  <h2 class="titulo_seccion wow animate__animated animate__fadeInLeft">
+     Our Team
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+   
+  </h2>
+
+  <div class="contenedor_equipo">
+
+
+    <article class="card_equipo wow animate__animated animate__bounceInDown">
+      <div class="imagen_equipo">
+        <img src="img/persona3.avif" alt="Amy Jones">
+        <div class="overlay_redes">
+          <div class="iconos_redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="info_equipo">
+        <h3>Amy Jones</h3>
+        <p>Founder</p>
+      </div>
+    </article>
+
+ 
+    <article class="card_equipo wow animate__animated animate__bounceInDown">
+      <div class="imagen_equipo">
+        <img src="img/persona4.avif" alt="David Bairstow">
+        <div class="overlay_redes">
+          <div class="iconos_redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="info_equipo">
+        <h3>David Bairstow</h3>
+        <p>CEO</p>
+      </div>
+    </article>
+
+   
+    <article class="card_equipo wow animate__animated animate__bounceInDown">
+      <div class="imagen_equipo">
+        <img src="img/persona5.avif" alt="Susie Rowe">
+        <div class="overlay_redes">
+          <div class="iconos_redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="info_equipo">
+        <h3>Susie Rowe</h3>
+        <p>Manager</p>
+      </div>
+    </article>
+
+    <article class="card_equipo wow animate__animated animate__bounceInDown">
+      <div class="imagen_equipo">
+        <img src="img/persona7.avif" alt="Bill Athey">
+        <div class="overlay_redes">
+          <div class="iconos_redes">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="info_equipo">
+        <h3>Bill Athey</h3>
+        <p>Gardener</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+<!-- parte de la vida, la vida es un carrousel -->
+
+<section class="seccion_testimonios">
+  <h2 class="titulo_seccion wow animate__animated animate__fadeInLeft">
+      Our Testimonials
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  
+  </h2>
+
+  <div id="carousel">
+    <div id="slide-container">
+      <article class="slide wow animate__animated animate__bounceInDown">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona1.jpg" alt="Clare Gough">
+          <div>
+            <strong>Clare Gough</strong>
+            <p>Designer</p>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="slide wow animate__animated animate__bounceInDown">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona4.avif" alt="Chris Smith">
+          <div>
+            <strong>Chris Smith</strong>
+            <p>Manager</p>
+          </div>
+        </div>
+      </article>
+      <article class="slide wow animate__animated animate__bounceInDown">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona5.avif" alt="Laura Marsh">
+          <div>
+            <strong>Laura Marsh</strong>
+            <p>Housewife</p>
+          </div>
+        </div>
+      </article>
+    <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona1.jpg" alt="Clare Gough">
+          <div>
+            <strong>Clare Gough</strong>
+            <p>Designer</p>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona4.avif" alt="Chris Smith">
+          <div>
+            <strong>Chris Smith</strong>
+            <p>Manager</p>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona5.avif" alt="Laura Marsh">
+          <div>
+            <strong>Laura Marsh</strong>
+            <p>Housewife</p>
+          </div>
+        </div>
+      </article>
+       <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona1.jpg" alt="Clare Gough">
+          <div>
+            <strong>Clare Gough</strong>
+            <p>Designer</p>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona4.avif" alt="Chris Smith">
+          <div>
+            <strong>Chris Smith</strong>
+            <p>Manager</p>
+          </div>
+        </div>
+      </article>
+      <article class="slide">
+        <div class="tarjeta_testimonio">
+          <p class="texto_testimonio">
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa corrupti nulla aliquid harum sed mollitia totam, perspiciatis deserunt praesentium rerum vel libero.</em>
+          </p>
+          <i class="fa-solid fa-quote-left icono_comilla"></i>
+        </div>
+        <div class="info_persona">
+          <img src="img/persona5.avif" alt="Laura Marsh">
+          <div>
+            <strong>Laura Marsh</strong>
+            <p>Housewife</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="slide-buttons">
+  <a href="#" id="back-button" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+  <a href="#" id="forward-button" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="slide-indicators">
+  <span class="slide-indicator active"></span>
+  <span class="slide-indicator"></span>
+  <span class="slide-indicator"></span>
+  <span class="slide-indicator"></span>
+  <span class="slide-indicator"></span>
+</div>
+  </div>
+</section>
+<!-- esto es parte del parralaz -->
+ <section class="parallax">
+  <div class="contenido_parallax">
+    <div class="bloque">
+      <h2>15+</h2>
+      <p>Experience Years</p>
+    </div>
+    <div class="bloque">
+      <h2>800+</h2>
+      <p>Projects Completed</p>
+    </div>
+    <div class="bloque">
+      <h2>500+</h2>
+      <p>Satisfied Clients</p>
+    </div>
+    <div class="bloque">
+      <h2>150+</h2>
+      <p>Expert Staff</p>
+    </div>
+  </div>
+</section>
+
+<!-- parte del acrordenoooooooooooon -->
+
+<section class="ancho contenedor_faqs">
+  <div class="faq_izquierda">
+    <h2 class="titulo_seccion wow animate__animated animate__bounceInDown">
+      FAQS
+      <span class="decorador">
+        <span class="linea"></span>
+        <i class="fa-solid fa-leaf"></i>
+        <span class="linea"></span>
+      </span>
+    </h2>
+
+    <div class="contenedor_acordeon wow animate__animated animate__backInLeft">
+      <div class="pregunta">Do I Need To Supply Anything For The Gardeners?<i class="fas fa-chevron-down"></i> </div>
+      <div class="respuesta">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laboriosam non eligendi reiciendis quis laborum exercitationem voluptatibus autem harum nihil nisi sed mollitia.
+      </div>
+
+      <div class="pregunta">What Kinds Of Payment Do You Accept? <i class="fas fa-chevron-down"></i> </div>
+      <div class="respuesta">
+        We accept cash, credit card, debit card, and online transfers.
+      </div>
+
+      <div class="pregunta">When Should I Have Landscaping Done?<i class="fas fa-chevron-down"></i> </div>
+      <div class="respuesta">
+        Best done in early spring or fall for optimal results.
+      </div>
+
+      <div class="pregunta">How Do I Get A Quote?<i class="fas fa-chevron-down"></i></div>
+      <div class="respuesta">
+        You can contact us directly or use our online quote form.
+      </div>
+    </div>
+  </div>
+
+  <div class="faq_derecha wow animate__animated animate__backInRight">
+    <img src="img/jardinero_quest.jpeg"/>
+  </div>
+</section>
+<!-- parte blog -->
+ <section class="seccion_blogs ancho">
+  <h2 class="titulo_seccion wow animate__animated animate__backInLeft">
+    Our Blogs
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  </h2>
+
+  <div class="blogs_flex">
+    <div class="blog_card  wow animate__animated animate__bounceInDown">
+      <div class="imagen_blog">
+        <img src="img/blog1.jpg">
+        <div class="fecha">Feb<br><strong>25th</strong></div>
+      </div>
+      <div class="contenido_blog">
+        <h3 class="titulo_blog">Lawn And Garden Care Tips</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+      </div>
+    </div>
+
+    <div class="blog_card wow animate__animated animate__bounceInDown">
+      <div class="imagen_blog">
+        <img src="img/blog2.jpeg">
+        <div class="fecha">Apr<br><strong>22nd</strong></div>
+      </div>
+      <div class="contenido_blog">
+        <h3 class="titulo_blog">5 Ideas For Modern Landscape Design</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+      </div>
+    </div>
+
+    <div class="blog_card wow animate__animated animate__bounceInDown">
+      <div class="imagen_blog">
+        <img src="img/blog3.jpg">
+        <div class="fecha">Jul<br><strong>15th</strong></div>
+      </div>
+      <div class="contenido_blog">
+        <h3 class="titulo_blog">7 Great Weeding Tips For Beginners</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br>
+  <h2 class="titulo_seccion wow animate__animated animate__backInLeft">
+    Contact Us
+    <span class="decorador">
+      <span class="linea"></span>
+      <i class="fa-solid fa-leaf"></i>
+      <span class="linea"></span>
+    </span>
+  </h2>
+<!-- parte del mapa y del formulario -->
+<section class="seccion_contacto">
+
+  <div class="contenedor_contacto">
+   
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115467.47673139156!2d66.90997295!3d24.8607348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f91d56dcb71%3A0x55ab0943aa4f62c3!2sKarachi%2C%20Pakistan!5e0!3m2!1ses!2smx!4v1682878822205!5m2!1ses!2smx"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <div class="formulario_sobre_mapa">
+      <div class="info_contacto">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-phone"></i>    <span>Contact</span> <br>+123-456-789, +111-222-333</p>
+        <p><i class="fa-solid fa-clock"></i> <span>Opening hours</span><br> Mon - Fri, 9am - 6pm</p>
+        <p><i class="fa-solid fa-envelope"></i>
+          <span>Email</span><br> abc@gmail.com,
+
+xyz@gmail.com</p>
+  <p><i class="fa-solid fa-location-dot"></i>
+          <span>Address</span><br>karachi, pakistan</p>
+      </div>
+
+  <div class="formulario_contacto">
+  <h3>Get In Touch</h3>
+  <form name="form_contacto" onsubmit="return validarFormulario()">
+    <input type="text" placeholder="Name" name="nombrecontacto" id="nombrecontacto">
+    <input type="email" placeholder="Email" name="emailcontacto" id="emailcontacto">
+    <input type="text" placeholder="Subject" name="asunto" id="asunto" maxlength="50">
+    <textarea placeholder="Message" name="mensaje" id="mensaje"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+    </div>
+  </div>
+</section>
+<br><br><br>
+<!-- parte final del footer -->
+ <footer class="footer_parallax">
+  <div class="footer_contenido ancho">
+    <!-- Logo e info -->
+    <div class="footer_col">
+      <h3 class="logo_footer">
+        <img src="img/logo.png" alt="Greencrest"> Greencrest
+        <span>Gardening Service</span>
+      </h3>
+      <p>We Provide Cutting Edge Lawn Care Service. We Make Your Lawn Look Its Best.</p>
+      <div class="redes_sociales">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="footer_col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Garden Care</a></li>
+        <li><a href="#">Lawn Mowing</a></li>
+        <li><a href="#">Landscape Design</a></li>
+        <li><a href="#">Cleanups Services</a></li>
+        <li><a href="#">Tree Planting</a></li>
+        <li><a href="#">Weeding & Prunning</a></li>
+      </ul>
+    </div>
+
+    <!-- Enlaces -->
+    <div class="footer_col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer_col">
+      <h4>Contact Info</h4>
+      <p><i class="fas fa-phone"></i> +123-456-789<br> +111-222-333</p>
+      <p><i class="fas fa-envelope"></i> abc@gmail.com<br> xyz@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+    </div>
+  </div>
+
+  <div class="footer_credito">
+    <p>Designed By <span>AS_Designs</span> | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+
+  
+
+<!-- script para abrir el menu en movil -->
+ <script>
+    $("#icono_movil").click(function(){
+      $("#contendor_menu").slideToggle();
+    });
+  </script>
+
+  <!-- script de la parte de resposive dslide para que pasen las fotos xd -->
+  <script>
+  $("#slider").responsiveSlides({
+    auto: true,
+    speed: 800,
+    timeout: 6000, 
+    pager: true,
+    nav: true,
+    prevText: "<", 
+    nextText: ">", 
+    namespace: "rslides"
+  });
+</script>
+
+<!-- parte de los tabs -->
+ <script>
+  $(".link").click(function (e) {
+    e.preventDefault();
+    $(".link").removeClass("activo");
+    $(this).addClass("activo");
+
+    $("#contenedor_tabs article").hide();
+    const seccion = $(this).attr("href");
+    $(seccion).fadeIn(300);
+  });
+
+  // Mostrar la primera por defecto
+  $("#contenedor_tabs article").hide();
+  $("#todos").fadeIn(300);
+</script>
+<!-- esto es para la parte de las preguntas y respuestas -->
+
+<script>
+  $(".pregunta").click(function(){
+    var t = $(this);
+    var tp = t.next();
+    tp.slideToggle();
+  });
+</script>
+
+
+
+ 
+
+
+ <section id="modal" class="fondomodal">
+  <div class="contenidomodal jardin_modal">
+    <h2>🌿 Cotiza tu Servicio de Jardinería</h2>
+    <p>Déjanos tus datos y te contactamos lo antes posible</p>
+    <i id="cerrar_modal" class="cerrarmodal fa-solid fa-x"></i>
+    <br><br>
+    <form class="formulario">
+      <input type="text" placeholder="Tu nombre *" required><br><br>
+      <select required>
+        <option disabled >Selecciona un servicio</option>
+        <option>Corte de pasto</option>
+        <option>Limpieza de jardín</option>
+        <option>Diseño paisajístico</option>
+        <option>Poda de árboles</option>
+      </select><br><br>
+      <input type="date" required><br><br>
+      <button type="submit">Solicitar Cotización</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  $("#boton_modal").click(function (e) {
+    e.preventDefault();
+    $("#modal").addClass("mostrar");
+  });
+
+  $("#cerrar_modal").click(function () {
+    $("#modal").removeClass("mostrar");
+  });
+
+  window.onclick = function (e) {
+    if (e.target.id === "modal") {
+      $("#modal").removeClass("mostrar");
+    }
+  };
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      $("#modal").removeClass("mostrar");
+    }
+  });
+
+  setTimeout(function () {
+    $("#modal").addClass("mostrar");
+  }, 6000);
+</script>
+<script>
+              new WOW().init();
+              </script>
+<script src="js/carrousel.js"></script>
+
+</body>
+</html>
